@@ -1,0 +1,136 @@
+/* Bootstrap 5 CSS is imported in main.jsx */
+:root {
+  --primary-navy: #1e3a8a;
+  --secondary-slate: #475569;
+  --bg-light: #f8fafc;
+  --card-border: #e2e8f0;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-main);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Restrained, professional navigation */
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.15rem;
+  letter-spacing: -0.01em;
+}
+
+.brand-badge {
+  font-size: 0.75rem;
+  background-color: #2563eb;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+/* Cards and surfaces */
+.stat-card {
+  border: 1px solid var(--card-border);
+  border-radius: 6px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.stat-value {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--primary-navy);
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+/* Badges for status */
+.badge-status-present {
+  background-color: #dcfce7;
+  color: #166534;
+  font-weight: 500;
+}
+
+.badge-status-wfh {
+  background-color: #e0f2fe;
+  color: #0369a1;
+  font-weight: 500;
+}
+
+.badge-status-onduty {
+  background-color: #fef3c7;
+  color: #92400e;
+  font-weight: 500;
+}
+
+.badge-status-absent {
+  background-color: #fee2e2;
+  color: #991b1b;
+  font-weight: 500;
+}
+
+.badge-status-leave {
+  background-color: #f1f5f9;
+  color: #475569;
+  font-weight: 500;
+}
+
+/* Responsive table styling */
+.table-responsive {
+  border: 1px solid var(--card-border);
+  border-radius: 6px;
+  background: #ffffff;
+  overflow-x: auto;
+}
+
+.table th {
+  background-color: #f1f5f9;
+  color: #334155;
+  font-size: 0.825rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-weight: 600;
+}
+
+.table td {
+  font-size: 0.9rem;
+  vertical-align: middle;
+}
+
+/* History diff tag */
+.history-diff-from {
+  color: #dc2626;
+  text-decoration: line-through;
+  margin-right: 0.35rem;
+}
+
+.history-diff-to {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+/* Prevent horizontal overflow on mobile */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.nav-pills .nav-link {
+  color: var(--secondary-slate);
+  font-weight: 500;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+}
+
+.nav-pills .nav-link.active {
+  background-color: var(--primary-navy);
+  color: #ffffff;
+}
